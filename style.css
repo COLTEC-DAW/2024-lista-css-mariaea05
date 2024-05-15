@@ -59,11 +59,16 @@ abbr{
 
  footer{
 	margin: 4%;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 150px;
  }
 
  footer a{
 	border: 2px solid blue;
-	padding: 0.5em;
+	padding: 32px;
+    flex-wrap: wrap;
+    max-width: 20px;
  }
 
  .sidebar li{
@@ -92,4 +97,61 @@ abbr{
     top: 280px;
     left: 62%;
     padding-inline: 2%;
+   
 }
+
+a:hover{
+    color: darkblue;
+}
+
+a:visited{
+    font-weight: normal;
+}
+
+a{
+    font-weight: bold;
+}
+
+.preamble p:first-of-type::first-letter{
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    margin-right: 8px;
+    line-height: 1em;
+}
+
+.sidebar{
+    border-top: 1px, solid, black;
+}
+
+a{
+    font-weight: bold;
+}
+
+a:visited{
+    font-weight: normal;
+}
+
+.sidebar:last-child{
+    border-bottom: 2px, solid, black;
+}
+
+.benefits{
+    display: flex;
+    left: 50%;
+}
+
+.design-selection ul li {
+    border-top: 1px solid black;
+    line-height: 1em;
+    
+}
+
+.design-selection ul li:last-child {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
