@@ -1,22 +1,28 @@
 html{
     margin:0;
     padding: 0;
+    
 }
+
+.page-wrapper{
+    position: relative;
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+ }
 
 body{
     background-color: #B2CeF4;
-    margin:auto;
     color: #0F6FF5;
     font-family: sans-serif;
     text-indent: 1em;
-    width: 80%;
 }
 
 h1{
     text-align: center;
     font-size: 1.8rem;
-	margin-inline: 1em;
 	
+	padding-inline: 1em;
 }
 
 h2{
@@ -30,18 +36,14 @@ h3{
 }
 
 .summary{
-    float: right;
+    text-align: center;
 }
 
 abbr{
     font-variant: small-caps;
 }
 
-.preamble{
-    line-height: 1.5;
-}
-
- .intro{
+.intro{
     height: 550px;
  }
 
@@ -70,6 +72,17 @@ abbr{
     flex-wrap: wrap;
     max-width: 20px;
  }
+ 
+ .explanation{
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+ .sidebar{
+    border-top: 1px, solid, black;
+}
 
  .sidebar li{
 	margin-top: 1em;
@@ -81,23 +94,30 @@ abbr{
 	list-style: none;
  }
 
- .page-wrapper{
-    position: relative;
- }
- 
- .explanation{
-    width: 60%;
-    margin-right: 35%;
-    border-right: 1px solid #1f295c;
-    padding-right: 2%;
+ .sidebar:last-child{
+    border-bottom: 2px, solid, black;
 }
 
- .sidebar{
+
+.design-selection{
     position: absolute;
-    top: 280px;
+    top: 500px;
     left: 62%;
     padding-inline: 2%;
-   
+}
+
+.design-selection ul li:last-child {
+    border-bottom: 1px solid black;
+}
+
+.design-selection ul li {
+    border-top: 1px solid black;
+    line-height: 1em;
+    
+}
+
+#zen-supporting{
+    line-height: 1.5;
 }
 
 a:hover{
@@ -109,7 +129,12 @@ a:visited{
 }
 
 a{
+    color: blue;
     font-weight: bold;
+}
+
+.preamble{
+    line-height: 1.5;
 }
 
 .preamble p:first-of-type::first-letter{
@@ -120,36 +145,56 @@ a{
     line-height: 1em;
 }
 
-.sidebar{
-    border-top: 1px, solid, black;
-}
 
-a{
-    font-weight: bold;
-}
-
-a:visited{
-    font-weight: normal;
-}
-
-.sidebar:last-child{
-    border-bottom: 2px, solid, black;
-}
-
-.benefits{
+.benefits {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-top: 1px solid #1f295c;
+    border-bottom: 1px solid #1f295c;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
     left: 50%;
 }
 
-.design-selection ul li {
-    border-top: 1px solid black;
-    line-height: 1em;
-    
+.benefits h3 {
+    width: 30%;
+    text-align: center;
+    margin: 0; 
 }
 
-.design-selection ul li:last-child {
-    border-bottom: 1px solid black;
+.benefits p {
+    width: 70%;
+    margin: 0; 
 }
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2%;
+    border-top: 1px solid #1f295c;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.participation h3 {
+    flex: 1 1 100%; 
+    text-align: center; 
+}
+
+.participation p {
+    flex: 1 1 48%;
+    margin: 1%; 
+    box-sizing: border-box; 
+}
+
+
+
+
 
 
 
